@@ -6,30 +6,26 @@ import java.util.Random;
 import java.util.*;
 public class Task1 {
    public void fun(int count){
-    
-System.out.println("your score is  "+ count +"out of 3");
-if (count <= 1){
+if (count ==0){
     System.out.println("Better luck next time");
 }
-if(count >= 2){
+if(count >=1 ){
     System.out.println("well done!!");
 }
-
-    
 }
 
     public static void main(String[] args) {
         System.out.println("welcome to the guess game!!");
         System.out.println("you have to enter a number between 1-100");
-        System.out.println("you will be given five chance and at the end your score will be displayed ");
+        System.out.println("you will be given five chances ");
         Random a = new Random();
         int n = a.nextInt(100)+1;
-       
 
          int count =0;
         
        
         for(int i =1;i<=5;i++){
+            
         Scanner obj = new Scanner(System.in);
         System.out.print("Guess the number between 1-100:");
         int num = obj.nextInt();
