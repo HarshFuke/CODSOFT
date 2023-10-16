@@ -35,11 +35,17 @@ if(count >= 2){
         int num = obj.nextInt();
         
         
-         if(num - n <= 5){
+         if(num - n <= 10 && num-n > 0 ){
             System.out.println("you are very close to number . ");
- }else if(num - n > 5 ){
-    System.out.println("your guess is far from the number.");
- }else if (num -n == 0){
+ }else if(n- num <= 10 && n-num > 0 ){
+    System.out.println("you are very close to the number.");
+ }else if(num-n>10){
+    System.out.println("you are far from number");
+ }
+ else if(n-num>10){
+    System.out.println("you are far from number");
+ }
+ else if (num -n == 0){
             System.out.println("your guess is correct ");
             count ++;
         }
